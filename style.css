@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    margin: auto;
+}
+
+div {
+    background-color: white;
+    width: 40rem;
+    height: 56rem;
+    margin: auto;
+}   
+
+h1 {
+    font-family: 'Roboto Serif', serif;
+    font-style: bold;
+    font-size: 35px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Roboto Serif', serif;
+    font-style: bold;
+    font-size: 25px;
+    margin: auto;
+}
+
+p {
+    font-family: 'Roboto Serif', serif;
+    font-size: 16px;
+    margin: auto;
+}
+
+p.caption {
+    font-family: 'Roboto Serif', serif;
+    font-size: 14px;
+    font-style: italic;
+    margin: auto;
+}
+
+button {
+    background-color: #5680eeff;
+    color: white;
+    width: 30rem;
+    height: 10rem;
+    font-family: 'Roboto Serif', serif;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+button.alternative {
+    background-color: #95f5cd;
+    color: black;
+    width: 24rem;
+    height: 8rem;
+    font-family: 'Roboto Serif', serif;
+    font-size: 30px;
+    border-radius: 25px;
+}
