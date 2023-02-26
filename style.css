@@ -47,6 +47,7 @@ button {
     font-family: 'Roboto Serif', serif;
     font-size: 30px;
     border-radius: 25px;
+    margin: 5px;
 }
 
 button:hover {
