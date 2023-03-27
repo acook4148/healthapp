@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
+body {
+  height: 100%;
+  width: 13rem;
+  margin: 2rem;
+}
+
+.heading {
+  font-family: 'Roboto Serif', serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2px;
+}
+.subheading {
+  font-family: 'Roboto Serif', serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 10px;
+}
+
+.regtext {
+  font-family: 'Roboto Serif', serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.smalltext {
+  font-family: 'Roboto Serif', serif;
+  font-size: 10px;
+  line-height: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Color Codes */
+.light-blue {
+  background-color: #8BA9F4;
+}
+.dark-blue {
+  background-color: #5680EE;
+}
+

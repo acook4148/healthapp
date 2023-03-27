@@ -1,0 +1,180 @@
+<head>
+<link rel="stylesheet" href="mainstyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+  .header-container {
+    width:100%;
+    height:2rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .text-inputs {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:7px;
+    margin-bottom:7px;
+  }
+  input {
+    background-color: #E5E5E5;
+    border:none;
+    border-radius:4px;
+    height:1.5rem;
+  }
+  .scroll-container {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    overflow-y:auto;
+    height: 12rem;
+    width:100%;
+  }
+  .border{
+    border: solid 1px lightgray;
+  }
+  #top-banner {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:1rem;
+    margin-bottom:-1rem;
+  }
+  #home-container {
+    height:2.5rem;
+    width:2.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+  }
+  #add-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #add-button {
+    height:1.5rem;
+    line-height:2rem;
+    width:3rem;
+    border-radius: 5px;
+    margin-top:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-left:.5rem;
+  }
+  #submit-button {
+    height:2rem;
+    width:13rem;
+    border-radius: 5px;
+    margin-top:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="window.location.href='tabOne.html'">Tab 1</button>
+    <button class="tablinks" onclick="window.location.href='tabTwo.html'">Tab 2</button>
+    <button class="tablinks" onclick="window.location.href='tabThree.html'">Tab 3</button>
+    <button class="tablinks" onclick="window.location.href='tabFour.html'">Tab 4</button>
+    <button class="tablinks" onclick="window.location.href='tabFive.html'">Tab 5</button>
+    <button class="tablinks" onclick="window.location.href='tabSix.html'">Tab 6</button>
+  </div>  
+
+  <div id="top-banner">
+    <div>
+      <p class="heading">Lift</p>
+      <p class="heading">Tracker</p>
+    </div>
+    <div id="home-container" class="dark-blue">
+      <i class="material-icons" style="color:white; margin-right: 0;">home</i>
+    </div>
+  </div>
+  <p class="regtext" style="margin-left:1rem;">Add your lifts for the day</p>
+  <p class="subheading center" style="margin-bottom: 0rem;">Mar 20, 2023</p>
+  <div class="header-container">
+    <p style="width:45%" class="smalltext center">Exercise</p>
+    <p style="width:22.5%" class="smalltext center">Weight</p>
+    <p style="width:16.125%" class="smalltext center">Sets</p>
+    <p style="width:16.125%" class="smalltext center">Reps</p>
+  </div>
+  <div class="scroll-container border">
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+    <div class=text-inputs>
+      <input style="width:44%;" type="text" id="exercise">
+      <input style="width:21%;" type="text" id="weight">
+      <input style="width:15%;" type="text" id="sets">
+      <input style="width:15%;" type="text" id="reps">
+    </div>
+  </div>
+  <div id="add-container">
+    <div style="color:white" class="light-blue" id="add-button">
+      <i class="material-icons" style="color:white">add</i>
+    </div>
+  </div>
+  <div id="submit-container">
+    <div id="submit-button" class="dark-blue">
+      <div style="color:white" class="subheading center">Submit Progress</div>
+    </div>
+  </div>
+</body>
+
+<script>
+  
+</script>
