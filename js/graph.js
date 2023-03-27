@@ -9,11 +9,11 @@ bodyFat = [25, 22, 21.7, 21.5, 21.1, 20.5, 20, 19, 18.8, 18.4, 18, 17]
 bench = [150, 175, 200, 210, 215, 220, 225, 228, 230, 235, 236, 238]
 
 const data = {
-    "time": time,
-    "weight": weight,
-    "calories": avgCalorie, 
-    "bodyFat": bodyFat, 
-    "bench": bench
+    "Time": time,
+    "Body Weight": weight,
+    "Average Calorie Intake": avgCalorie, 
+    "Body Fat": bodyFat, 
+    "Bench Press": bench
 };
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
     <title>Visualization</title>
 </head>
 <body>
@@ -11,26 +12,28 @@
     https://jscharting.com/tutorials/creating-js-charts/ -->
     <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
     <script src="js/graph.js"></script>
-    <div id="chartDiv" style="max-width: 500px; height:
-    300px;"></div>
+    <div id="chartDiv" style="width: 1000px; height:
+    500px;"></div>
 
 
     <label for="x">x-axis:</label>
 
     <select name="x" id="x">
-        <option value="time" selected>Time</option>
-        <option value="weight">Body Weight</option>
-        <option value="calories">Average Calorie Intake</option>
-        <option value="bench">Bench Press</option>
+        <option value="Time" selected>Time</option>
+        <option value="Body weight">Body Weight</option>
+        <option value="Average Calorie Intake">Average Calorie Intake</option>
+        <option value="Bench Press">Bench Press</option>
     </select>
+
+    <br>
 
     <label for="y">y-axis:</label>
 
     <select name="y" id="y">
-        <option value="weight" selected>Body Weight</option>
-        <option value="calories">Average Calorie Intake</option>
-        <option value="bodyFat">Body Fat</option>
-        <option value="bench">Bench Press</option>
+        <option value="Body Weight" selected>Body Weight</option>
+        <option value="Average Calorie Intake">Average Calorie Intake</option>
+        <option value="Body Fat">Body Fat</option>
+        <option value="Bench Press">Bench Press</option>
     </select>
 
     <input type="submit" value="Graph" onclick="return rebuild();" />
