@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
+
+* {
+    font-family: 'Roboto Serif', serif;
+}
+
 body {
   height: 100%;
   width: 13rem;
