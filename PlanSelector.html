@@ -1,0 +1,83 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+    
+</head>
+
+<body>
+  
+    
+    
+    <div class="scroller">
+        <h1>
+        Plan Builder  
+        </h1>
+        <p>Choose your choose your intended focus area:</p>
+
+<input type="radio" id="Lifting" name="color" value="Lifting">
+<label for="Lifting">Lifting</label><br>
+<input type="radio" id="Running" name="color" value="Running">
+<label for="Running">Running</label><br>
+<input type="radio" id="Flexibility" name="color" value="Flexibility">
+<label for="Flexibility">Flexibilty</label><br>
+<input type="radio" id="General Health" name="color" value="General Health">
+<label for="General Health">General Health</label><br>
+
+<p id="Lifting2" style="display:none">
+   Input Experience Level <br>
+    <input type="radio" id="LiftExpB" name="LiftingExperience" value="Beginner">
+    <label for="Lifting">Beginner</label><br>
+    <input type="radio" id="LiftExpI" name="LiftingExperience" value="Intermediate">
+    <label for="Running">Intermediate</label><br>
+    <input type="radio" id="LiftExpE" name="LiftingExperience" value="Expert">
+    <label for="Running">Expert</label><br>
+</p>
+<p id="Lifting3" style="display:none">
+    Input Your Focus area <br>
+     <input type="radio" id="LiftFocHyper" name="LiftingFocus" value="Hypertrophy">
+     <label for="Lifting">Hypertrophy (Muscle Building)</label><br>
+     <input type="radio" id="LiftFocStrength" name="LiftingFocus" value="Strength">
+     <label for="Running">Strength</label><br>
+     <input type="radio" id="LiftFocHealth" name="LiftingFocus" value="Health">
+     <label for="Running">General Health</label><br>
+     
+ </p>
+ <p id="LiftingBeginnerStrength" style="display:none">
+    Based on your input, we recommend these programs for you!<br>
+    <a href="https://docs.google.com/spreadsheets/d/1iPaY1KT_C2B4CldLHkwyJXC4SQmsSeCmH7MIWRod6h4/edit#gid=1342896058">Jim Wendlers 5x5</a>
+   <br> <a href="file:///Users/ericrobinson/Downloads/Copy%20of%20531%20FOR%20BEGINNERS%20_%20LiftVault.com/The%20Program.html">NSUNS 5/3/1</a>
+</p>
+ 
+<br> <button onclick="displayText()" id= "MainButtonPlanSelector">Submit</button>
+
+<h1 id="display"></h1>
+
+<script type="text/javascript">
+    function displayText() {
+        var color = document.querySelector('input[name="color"]:checked').value;
+        if (color == "Lifting"){
+            document.getElementById('Lifting2').style.display='block'
+            document.getElementById('MainButtonPlanSelector').setAttribute('onclick','displayTextLifting1()')
+        }
+       
+       
+     
+    }
+    function displayTextLifting1() {
+        var exp = document.querySelector('input[name="LiftingExperience"]:checked').value;
+        if (exp == "Beginner"){
+            document.getElementById('Lifting3').style.display='block'
+            document.getElementById('MainButtonPlanSelector').setAttribute('onclick','displayTextLifting2()')
+        }
+    }
+    function displayTextLifting2() {
+        var exp = document.querySelector('input[name="LiftingFocus"]:checked').value;
+        if (exp == "Strength"){
+            document.getElementById('LiftingBeginnerStrength').style.display='block'
+        }
+    }
+</script>
+    </div>
+</body>
+
+    
