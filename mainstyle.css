@@ -6,8 +6,35 @@
 
 body {
   height: 100%;
-  width: 13rem;
+  width: 15rem;
   margin: 2rem;
+}
+
+div#chartDiv {
+  height: 700px;
+  width: 500px;
+  display: flex;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+}
+
+ul.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
 }
 
 .heading {

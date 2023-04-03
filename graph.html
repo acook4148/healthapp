@@ -8,12 +8,33 @@
     <title>Visualization</title>
 </head>
 <body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="homepage.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="graph.html">Visualizations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weighdiary.html">Weight Diary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PlanSelector.html">Plan Selector</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <!-- inspired by  https://www.freecodecamp.org/news/how-to-make-your-first-javascript-chart/ &
     https://jscharting.com/tutorials/creating-js-charts/ -->
     <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
     <script src="js/graph.js"></script>
-    <div id="chartDiv" style="width: 1000px; height:
-    500px;"></div>
+    <div id="chartDiv" ></div>
 
 
     <label for="x">x-axis:</label>
