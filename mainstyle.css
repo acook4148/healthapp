@@ -6,12 +6,12 @@
 
 body {
   height: 100%;
-  width: 15rem;
+  width: 20rem;
   margin: 2rem;
 }
 
 div#chartDiv {
-  height: 700px;
+  height: 600px;
   width: 500px;
   display: flex;
   text-align: center;
@@ -20,21 +20,82 @@ div#chartDiv {
   margin: auto;
 }
 
-ul.navbar-nav {
+div.scrollmenu {
+  background-color:#5680eeff;
+  overflow: auto;
+  white-space: nowrap;
+  height: 3rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+/* to hide scrollbar */
+div.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: rgb(222, 222, 222);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a.active {
+  color: white;
+  text-decoration: underline;
+}
+
+/* div.time {
+  margin: 0px 10px 10px 10px;
+} */
+
+div.card {
+  border: rgb(203, 203, 203) 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+div.card a {
+  color: blue;
+  text-decoration: underline;
+}
+
+hr {
+  /* background-color: blue; */
+  border: 0.5px solid rgb(203, 203, 203);
+  margin-bottom: 15px;
+}
+/* div.scrollmenu a:hover {
+  font-size: 17px;
+} */
+
+/* ul.navbar-nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 200px;
   background-color: #f1f1f1;
   border: 1px solid #555;
-}
+} */
 
 li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
+  padding-bottom: 8px;
   text-decoration: none;
-  border-bottom: 1px solid #555;
+}
+
+div.card-header { 
+  font-size: 18px;
+  text-decoration: none;
+  color: #5680eeff;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  width: 19rem;
+  padding-left: 5px;
 }
 
 .heading {
@@ -76,6 +137,7 @@ input[type="submit"] {
   border-radius: 10px;
   margin-top: 5px;
 }
+
 #MainButtonPlanSelector {
   background-color: #5680eeff;
   color: white;
@@ -87,6 +149,27 @@ input[type="submit"] {
   margin-top: 5px;
 }
 
+p.cals {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+#progress {
+  width: 100%;
+  width: 19rem;
+  border-radius: 5px;
+  background-color: none;
+  border:rgb(203, 203, 203) 1px solid;
+  margin-left: 5px;
+  margin-bottom: 10px;
+} 
+
+#myBar {
+  height: 25px;
+  /* width: 19rem; */
+  border-radius: 5px;
+  background-color: #8BA9F4;
+}
 
 input[type="submit"]:hover {
   box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);

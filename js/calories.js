@@ -1,13 +1,15 @@
 window.onload=set;
 
-dailyCals = 1500;
+const dailyCals = 2000;
 
-goalCals = 3000
+const goalCals = 3000
 function set() {
     let bar = document.getElementById("myBar");
     let cals = document.getElementById("cals");
-    cals.innerText = dailyCals + " Calories";
+    cals.innerText = `Daily Total: ${dailyCals} Calories \n 
+                        Goal: ${goalCals} Calories`;
 
-    bar.style.width = "50%";
+    let percent = ((dailyCals*100.0)/goalCals).toString() + "%";
+    bar.style.width = percent;
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="mainstyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
     <style>
         .card {
             /* height: 12rem; */
@@ -13,9 +13,17 @@
     </style>
 </head>
 <body>
-  <!-- <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-  <script src="js/bootstrap.js"></script> -->
-    <nav class="navbar" >
+  <div class="scrollmenu">
+    <a class="active" href="homepage.html">Home</a>
+    <a href="graph.html">Visualization</a>
+    <a href="weighdiary.html">Weight Diary</a>
+    <a href="PlanSelector.html">Plan Selector</a>
+  </div>
+  <script src="js/calories.js"></script>
+  <script src="js/dateTime.js"></script>
+  <div class="time" id="time"></div>
+  <hr>
+    <!-- <nav class="navbar" >
         <div class="container-fluid">
           <a class="navbar-brand" href="homepage.html">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +43,10 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
       <div class="card">
-        <div class="card-header">
-          News
-        </div>
-        <div class="card-body">
+            <div class="card-header">News</div>
             <ul>
                 <li>
                     <a href="">30 mins cardio/day significa...</a>
@@ -53,11 +58,10 @@
                     <a href="">Getting four sleep cycles a night can boost...</a>
                 </li>
               </ul>
-        </div>
       </div>
       <div class="card">
         <div class="card-header">
-          Today
+          Today's Exercise
         </div>
         <div class="card-body">
             <ul>
@@ -75,7 +79,18 @@
       </div>
       <div class="card">
         <div class="card-header">
-          Yesterday
+          Calorie Progress
+        </div>
+        <div class="card-body">
+          <p class="cals" id="cals"></p>
+          <div id="progress">
+              <div id="myBar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Yesterday's Recap
         </div>
         <div class="card-body">
           <ul>
@@ -94,6 +109,6 @@
     
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script> -->
 </html>

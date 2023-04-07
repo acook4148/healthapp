@@ -6,27 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainstyle.css">
     <title>Calorie Tracker</title>
-    <style>
-        p.cals {
-            font-size: 30px;
-        }
-
-        #progress {
-            width: 100%;
-            background-color: grey;
-        }
-
-        #myBar {
-            width: 1%;
-            height: 30px;
-            background-color: green;
-        }
-    </style>
 </head>
 <body>
+    <div class="scrollmenu">
+        <a href="homepage.html">Home</a>
+        <a href="graph.html">Visualization</a>
+        <a href="weighdiary.html">Weight Diary</a>
+        <a href="PlanSelector.html">Plan Selector</a>
+    </div>
     <script src="js/calories.js"></script>
-    <h1>Daily Total</h1>
-    <p class="cals" id="cals">2500 Calories</p>
+    <p class="cals" id="cals"></p>
     <div id="progress">
         <div id="myBar"></div>
     </div>
