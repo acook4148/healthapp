@@ -6,8 +6,8 @@
 
 body {
   height: 100%;
-  width: 20rem;
-  margin: 2rem;
+  width: 23rem;
+  padding: 1rem;
 }
 
 div#chartDiv {
@@ -20,30 +20,34 @@ div#chartDiv {
   margin: auto;
 }
 
-div.scrollmenu {
+div.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color:#5680eeff;
-  overflow: auto;
   white-space: nowrap;
+  overflow:hidden;
   height: 3rem;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-/* to hide scrollbar */
-div.scrollmenu::-webkit-scrollbar {
-  display: none;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: rgb(222, 222, 222);
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+  margin-bottom: 0px;
+  width:25rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left:-15px;
+  margin-right:-15px;
+  position:absolute;
+  bottom:0;
 }
 
-div.scrollmenu a.active {
-  color: white;
-  text-decoration: underline;
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:0;
+  height:3rem;
+  flex:25%;
+  margin-top:.5rem;
 }
 
 /* div.time {
@@ -100,26 +104,26 @@ div.card-header {
 
 .heading {
   font-family: 'Roboto Serif', serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 2px;
 }
 .subheading {
   font-family: 'Roboto Serif', serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 10px;
 }
 
 .regtext {
   font-family: 'Roboto Serif', serif;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 0px;
 }
 
 .smalltext {
   font-family: 'Roboto Serif', serif;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 25px;
 }
 
@@ -174,6 +178,24 @@ p.cals {
 input[type="submit"]:hover {
   box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
   cursor: pointer;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  padding:15px;
+  padding-bottom:0;
+  border-radius: 10px;
+  height:39rem;
+  width:23rem;
+}
+
+.overflow-y {
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 
 

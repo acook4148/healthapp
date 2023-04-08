@@ -1,48 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainstyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Visualization</title>
-</head>
-<body>
-    <div class="scrollmenu">
-        <a href="homepage.html">Home</a>
-        <a class="active" href="graph.html">Visualization</a>
-        <a href="weighdiary.html">Weight Diary</a>
-        <a href="PlanSelector.html">Plan Selector</a>
-        <a href="calorieTracker.html">Calorie Tracking</a>
-    </div>
-
-    <!-- inspired by  https://www.freecodecamp.org/news/how-to-make-your-first-javascript-chart/ &
+  </head>
+  <body>
+    <div class="screen">
+      <div class="overflow-y">
+        <!-- inspired by  https://www.freecodecamp.org/news/how-to-make-your-first-javascript-chart/ &
     https://jscharting.com/tutorials/creating-js-charts/ -->
-    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
-    <script src="js/graph.js"></script>
-    <div id="chartDiv" ></div>
+        <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+        <script src="js/graph.js"></script>
+        <div id="chartDiv"></div>
 
+        <label for="x">x-axis:</label>
 
-    <label for="x">x-axis:</label>
+        <select name="x" id="x">
+          <option value="Time" selected>Time</option>
+          <option value="Body Weight">Body Weight</option>
+          <option value="Average Calorie Intake">Average Calorie Intake</option>
+          <option value="Bench Press">Bench Press</option>
+        </select>
 
-    <select name="x" id="x">
-        <option value="Time" selected>Time</option>
-        <option value="Body Weight">Body Weight</option>
-        <option value="Average Calorie Intake">Average Calorie Intake</option>
-        <option value="Bench Press">Bench Press</option>
-    </select>
+        <br />
 
-    <br>
+        <label for="y">y-axis:</label>
 
-    <label for="y">y-axis:</label>
+        <select name="y" id="y">
+          <option value="Body Weight" selected>Body Weight</option>
+          <option value="Average Calorie Intake">Average Calorie Intake</option>
+          <option value="Body Fat">Body Fat</option>
+          <option value="Bench Press">Bench Press</option>
+        </select>
 
-    <select name="y" id="y">
-        <option value="Body Weight" selected>Body Weight</option>
-        <option value="Average Calorie Intake">Average Calorie Intake</option>
-        <option value="Body Fat">Body Fat</option>
-        <option value="Bench Press">Bench Press</option>
-    </select>
+        <input type="submit" value="Graph" onclick="return rebuild();" />
+      </div>
+      <div class="navbar">
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='homepage.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #dedede; margin-top: 0; font-size: 20px"
+            >home</i
+          >
+          <p style="color: #dedede; margin: 0" class="smalltext">Home</p>
+        </button>
 
-    <input type="submit" value="Graph" onclick="return rebuild();" />
-</body>
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='graph.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: white; margin: 0; font-size: 20px"
+            >show_chart</i
+          >
+          <p style="color: white; margin: 0" class="smalltext">Visualization</p>
+        </button>
+
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='weightdiary.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #dedede; margin: 0; font-size: 20px"
+            >book</i
+          >
+          <p style="color: #dedede; margin: 0" class="smalltext">Diary</p>
+        </button>
+
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='PlanSelector.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #dedede; margin: 0; font-size: 20px"
+            >school</i
+          >
+          <p style="color: #dedede; margin: 0" class="smalltext">
+            Plan Selector
+          </p>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
