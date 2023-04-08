@@ -11,13 +11,7 @@ body {
 }
 
 div#chartDiv {
-  height: 600px;
-  width: 500px;
-  display: flex;
-  text-align: center;
-  position: relative;
-  justify-content: center;
-  margin: auto;
+  height: 500px;
 }
 
 div.navbar {
