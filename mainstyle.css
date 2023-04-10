@@ -125,6 +125,27 @@ div.card-header {
   text-align: center;
 }
 
+table{
+  margin-left: 5%;
+  border: 1px solid black;
+  border-collapse: collapse;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+  table-layout: auto;
+  margin-right: 5%;
+  width: 350px;
+}
+th, td {
+
+  border: 1px solid black;
+  padding: 6px;
+}
+.cell-highlight {
+  background-color: gold;
+  font-weight: bold;
+}
+
 input[type="submit"] {
   background-color: #5680eeff;
   color: white;
@@ -143,6 +164,16 @@ input[type="submit"] {
   height: 4rem;
   font-family: 'Roboto Serif', serif;
   font-size: 20px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+#MaxCalcButton {
+  background-color: #5680eeff;
+  color: white;
+  width: 12rem;
+  height: 2rem;
+  font-family: 'Roboto Serif', serif;
+  font-size: 15px;
   border-radius: 10px;
   margin-top: 5px;
 }

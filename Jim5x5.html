@@ -1,0 +1,344 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+
+  <body>
+    <div class="screen">
+      <div class="overflow-y" id="overflowy">
+        <h1>Jim Wendlers 5/3/1 Program</h1>
+        
+            This program is based on a 4 week rotation with 4 workouts a week. It is designed to be modifiable according to your goals and preferences.
+            
+        
+        <h3>
+            General Rep Scheme
+        </h3>
+        <table>
+            <tr>
+              <th>Week</th>
+              <th>Reps</th>
+             
+            </tr>
+            <tr>
+              <td>Week 1 </td>
+              <td>3x5</td>
+            
+            </tr>
+            <tr>
+              <td>Week 2</td>
+              <td>3x3</td>
+            
+            </tr>
+            <tr>
+              <td class="cell-highlight">Week 3</td>
+              <td class="cell-highlight">5, 3, 1+</td>
+          
+            </tr>
+            <tr>
+              <td>Week 4</td>
+              <td>3x5 (Deload)</td>
+            
+            </tr>
+           
+          </table>
+          <br>
+          The goal is to build up to high intensity PR's on week 3 while still managing fatigue and volume 
+
+          <h3>
+            Example Week
+          </h3>
+          <table style="width:350px;  table-layout: fixed;">
+        </tr>
+        <tr>
+          <th>Day 1 </th>
+          <th>Day 2 </th>
+          <th> Day 3</th>
+          <th>Day 4 </th>
+        </tr>
+            <tr>
+              <td> Warm-up </td>
+              <td> Warm-up </td>
+              <td> Warm-up </td>
+              <td> Warm-up </td>
+            </tr>
+            <tr>
+                <td>Shoulder Press</td>
+                <td>Deadlift</td>
+                <td>Bench</td>
+                <td>Squat </td>
+              
+              </tr>
+              <td>Assitance Exercises</td>
+              <td>Assitance Exercises</td>
+              <td>Assitance Exercises</td>
+              <td>Assitance Exercises</td>
+            
+        </tr>
+    </table>
+     <br> <br>
+    The primary exercises are for you to choose for yourself. If you are dealing with a certain injury you can modify the exercises accordingly.
+    <br><br> This is Jim Wendler's original plan and has a good balance between upper and lower body exercises. It is however recommended to use compound movements for these main lifts. 
+     <br><br> Assistance exercises are left entirely up to you. As an intermediate lifter you should know your favorite accessories and the rep ranges to do them in, as long as you are recovering between workouts.
+    <h3>
+        Choosing Weights
+    </h3>
+    <table>
+
+
+       
+    <tr>
+        <th>Set  </th>
+      <th>Week 1 </th>
+      <th>Week 2 </th>
+      <th> Week 3</th>
+      <th>Week 4 </th>
+     
+    </tr>
+        <tr>
+        <td>Set 1</td>
+          <td id=" tabletest"> 65%x5</td>
+          <td> 70%x3 </td>
+          <td> 75%x5 </td>
+          <td> 40%x5 </td>
+       
+        </tr>
+        <tr>
+            <td>Set 2</td>
+            <td> 75%x5</td>
+            <td> 80%x3 </td>
+            <td> 85%x3 </td>
+            <td> 50%x5 </td>
+         
+          </tr>
+          <tr>
+            <td>Set 3</td>
+            <td> 85%x5</td>
+            <td> 90%x3 </td>
+            <td> 95%x1+ </td>
+            <td> 60%x5 </td>
+         
+          </tr>
+          
+        
+</table>
+    <br>
+    Insert your Max
+
+
+
+      <div class="text-inputs">
+        <input style="width: 20%" type="text" id="weightforMaxCalc" />
+       
+      </div>
+      <button onclick="myFunction()" id="MaxCalcButton">
+        Calculate
+      </button>
+      <br>
+      <br>
+
+        </div>
+      
+            
+    </div>
+
+   
+
+         <div class="navbar">
+            <button
+              class="nav-button dark-blue"
+              onclick="window.location.href='homepage.html'"
+            >
+              <i
+                class="material-icons"
+                style="color: #dedede; margin-top: 0; font-size: 20px"
+                >home</i
+              >
+              <p style="color: #dedede; margin: 0" class="smalltext">Home</p>
+            </button>
+    
+            <button
+              class="nav-button dark-blue"
+              onclick="window.location.href='graph.html'"
+            >
+              <i
+                class="material-icons"
+                style="color: #dedede; margin: 0; font-size: 20px"
+                >show_chart</i
+              >
+              <p style="color: #dedede; margin: 0" class="smalltext">
+                Visualization
+              </p>
+            </button>
+    
+            <button
+              class="nav-button dark-blue"
+              onclick="window.location.href='weightdiary.html'"
+            >
+              <i
+                class="material-icons"
+                style="color: #dedede; margin: 0; font-size: 20px"
+                >book</i
+              >
+              <p style="color: #dedede; margin: 0" class="smalltext">Diary</p>
+            </button>
+    
+            <button
+              class="nav-button dark-blue"
+              onclick="window.location.href='PlanSelector.html'"
+            >
+              <i
+                class="material-icons"
+                style="color: white; margin: 0; font-size: 20px"
+                >school</i
+              >
+              <p style="color: white; margin: 0" class="smalltext">Plan Selector</p>
+            </button>
+          </div>
+
+
+          <script type="text/javascript">
+            
+            function myFunction() {
+  var x = document.createElement("TABLE");
+  x.setAttribute("id", "myTable");
+  document.getElementById("overflowy").appendChild(x);
+	
+var weight = document.getElementById('weightforMaxCalc').value;
+
+//insert error if wrong input
+//Creating and inserting Row 0
+  var r0 = document.createElement("TR");
+  r0.setAttribute("id", "r0");
+  document.getElementById("myTable").appendChild(r0);
+  
+  var tdr0c0 = document.createElement("TD");
+  var t = document.createTextNode("Set");
+  tdr0c0.appendChild(t);
+  document.getElementById("r0").appendChild(tdr0c0);
+  
+  var tdr0c1 = document.createElement("TD");
+  var t = document.createTextNode("Week 1");
+  tdr0c1.appendChild(t);
+  document.getElementById("r0").appendChild(tdr0c1);
+  
+   var tdr0c2 = document.createElement("TD");
+  var t = document.createTextNode("Week 2");
+  tdr0c2.appendChild(t);
+  document.getElementById("r0").appendChild(tdr0c2);
+  
+  var tdr0c3 = document.createElement("TD");
+  var t = document.createTextNode("Week 3");
+  tdr0c3.appendChild(t);
+  document.getElementById("r0").appendChild(tdr0c3);
+  
+  var tdr0c4 = document.createElement("TD");
+  var t = document.createTextNode("Week 4");
+  tdr0c4.appendChild(t);
+  document.getElementById("r0").appendChild(tdr0c4);
+  //Creating and inserting Row 1
+  
+  
+  var r1 = document.createElement("TR");
+  r1.setAttribute("id", "r1");
+  document.getElementById("myTable").appendChild(r1);
+  
+    
+  
+  var tdr1c0 = document.createElement("TD");
+  var t2 = document.createTextNode("Set 1");
+  tdr1c0.appendChild(t2);
+  document.getElementById("r1").appendChild(tdr1c0);
+  
+ var tdr1c1 = document.createElement("TD");
+  var t = document.createTextNode((weight*.65)+"x5");
+  tdr1c1.appendChild(t);
+  document.getElementById("r1").appendChild(tdr1c1);
+  
+ var tdr1c2 = document.createElement("TD");
+  var t = document.createTextNode((weight*.70)+"x3");
+  tdr1c2.appendChild(t);
+  document.getElementById("r1").appendChild(tdr1c2);
+  
+  var tdr1c3 = document.createElement("TD");
+   var t = document.createTextNode((weight*.75)+"x5");
+  tdr1c3.appendChild(t);
+  document.getElementById("r1").appendChild(tdr1c3);
+  
+  var tdr1c4 = document.createElement("TD");
+  var t = document.createTextNode((weight*.4)+"x5");
+  tdr1c4.appendChild(t);
+  document.getElementById("r1").appendChild(tdr1c4);
+  
+  //Creating and inserting Row 2
+  var r2 = document.createElement("TR");
+  r2.setAttribute("id", "r2");
+  document.getElementById("myTable").appendChild(r2);
+  
+  var tdr2c0 = document.createElement("TD");
+  var t2 = document.createTextNode("Set 2");
+  tdr2c0.appendChild(t2);
+  document.getElementById("r2").appendChild(tdr2c0);
+  
+ var tdr2c1 = document.createElement("TD");
+  var t = document.createTextNode((weight*.75)+"x5");
+  tdr2c1.appendChild(t);
+  document.getElementById("r2").appendChild(tdr2c1);
+  
+  var tdr2c2 = document.createElement("TD");
+   var t = document.createTextNode((weight*.8)+"x3");
+  tdr2c2.appendChild(t);
+  document.getElementById("r2").appendChild(tdr2c2);
+  
+  var tdr2c3 = document.createElement("TD");
+ var t = document.createTextNode((weight*.85)+"x3");
+  tdr2c3.appendChild(t);
+  document.getElementById("r2").appendChild(tdr2c3);
+  
+  var tdr2c4 = document.createElement("TD");
+  var t = document.createTextNode((weight*.5)+"x5");
+  tdr2c4.appendChild(t);
+  document.getElementById("r2").appendChild(tdr2c4);
+  
+  //Creating and inserting Row 3
+  var r3 = document.createElement("TR");
+  r3.setAttribute("id", "r3");
+  document.getElementById("myTable").appendChild(r3);
+  
+  var tdr3c0 = document.createElement("TD");
+  var t2 = document.createTextNode("Set 4");
+  tdr3c0.appendChild(t2);
+  document.getElementById("r3").appendChild(tdr3c0);
+  
+ var tdr3c1 = document.createElement("TD");
+  var t = document.createTextNode((weight*.85)+"x5");
+  tdr3c1.appendChild(t);
+  document.getElementById("r3").appendChild(tdr3c1);
+  
+  var tdr3c2 = document.createElement("TD");
+  var t = document.createTextNode((weight*.9)+"x3");
+  tdr3c2.appendChild(t);
+  document.getElementById("r3").appendChild(tdr3c2);
+  
+  var tdr3c3 = document.createElement("TD");
+   var t = document.createTextNode((weight*.95)+"x1+");
+  tdr3c3.appendChild(t);
+  document.getElementById("r3").appendChild(tdr3c3);
+  
+  var tdr4c4 = document.createElement("TD");
+  var t = document.createTextNode((weight*.6)+"x5");
+  tdr4c4.appendChild(t);
+  document.getElementById("r3").appendChild(tdr4c4);
+  
+   
+  
+ 
+
+
+
+}
+            </script>
