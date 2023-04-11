@@ -1,5 +1,6 @@
 <head>
   <link rel="stylesheet" href="mainstyle.css" />
+  <link rel="stylesheet" href="diarystyle.css" />
   <style>
     .header-container {
       width: 95%;
@@ -51,7 +52,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: -1rem;
-      margin-top: 0;
+      margin-top: 2rem;
     }
     #home-container {
       height: 2.5rem;
@@ -89,8 +90,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-left: 0.5rem;
-      margin-bottom: 1rem;
+      margin-top: -3rem;
     }
     #submit-button {
       height: 2rem;
@@ -109,6 +109,48 @@
 
 <body>
   <div class="screen">
+    <div class="topnavbar">
+      <button class="top-nav-button" style="margin-top: 0">
+        <i class="material-icons" style="color: #dedede; font-size: 30px"
+          >arrow_forward_ios</i
+        >
+      </button>
+
+      <button
+        class="top-nav-button"
+        onclick="window.location.href='weightdiary.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >fitness_center</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">Lifts</p>
+      </button>
+
+      <button
+        class="top-nav-button"
+        onclick="window.location.href='runningTracker.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >directions_run</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">Runs</p>
+      </button>
+      <button
+        class="top-nav-button"
+        onclick="window.location.href='bodyWeightTracker.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: white; margin: 0; font-size: 20px"
+          >accessibility</i
+        >
+        <p style="color: white; margin: 0" class="smalltext">Body Weight</p>
+      </button>
+    </div>
     <div class="overflow-y">
       <div id="top-banner">
         <div>
@@ -142,55 +184,49 @@
         </button>
       </div>
     </div>
-    <!-- <div class="navbar">
-        <button
-          class="nav-button"
-          onclick="window.location.href='homepage.html'"
+    <div class="navbar">
+      <button class="nav-button" onclick="window.location.href='homepage.html'">
+        <i
+          class="material-icons"
+          style="color: #dedede; margin-top: 0; font-size: 20px"
+          >home</i
         >
-          <i
-            class="material-icons"
-            style="color: #dedede; margin-top: 0; font-size: 20px"
-            >home</i
-          >
-          <p style="color: #dedede; margin: 0" class="smalltext">Home</p>
-        </button>
-  
-        <button
-          class="nav-button"
-          onclick="window.location.href='graph.html'"
+        <p style="color: #dedede; margin: 0" class="smalltext">Home</p>
+      </button>
+
+      <button class="nav-button" onclick="window.location.href='graph.html'">
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >show_chart</i
         >
-          <i
-            class="material-icons"
-            style="color: #dedede; margin: 0; font-size: 20px"
-            >show_chart</i
-          >
-          <p style="color: #dedede; margin: 0" class="smalltext">Visualization</p>
-        </button>
-  
-        <button
-          class="nav-button"
-          onclick="window.location.href='weightdiary.html'"
+        <p style="color: #dedede; margin: 0" class="smalltext">Visualization</p>
+      </button>
+
+      <button
+        class="nav-button"
+        onclick="window.location.href='weightdiary.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: white; margin: 0; font-size: 20px"
+          >book</i
         >
-          <i
-            class="material-icons"
-            style="color: white; margin: 0; font-size: 20px"
-            >book</i
-          >
-          <p style="color: white; margin: 0" class="smalltext">Diary</p>
-        </button>
-  
-        <button
-          class="nav-button"
-          onclick="window.location.href='PlanSelector.html'"
+        <p style="color: white; margin: 0" class="smalltext">Diary</p>
+      </button>
+
+      <button
+        class="nav-button"
+        onclick="window.location.href='PlanSelector.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >school</i
         >
-          <i
-            class="material-icons"
-            style="color: #dedede; margin: 0; font-size: 20px"
-            >school</i
-          >
-          <p style="color: #dedede; margin: 0" class="smalltext">Plan Selector</p>
-        </button>
-      </div> -->
+        <p style="color: #dedede; margin: 0" class="smalltext">Plan Selector</p>
+      </button>
+    </div>
   </div>
 </body>
 
