@@ -69,16 +69,11 @@
           name="LiftingFocus"
           value="Health"
         /><label for="Lifting">Olympic Weightlifting/Crossfit</label><br />
+      </p>
 
-        <p id="Running1" style="display: none">
-         
-          Input Experience Level <br />
-        <input
-          type="radio"
-          id="RunExpBeg"
-          name="RunningExp"
-          value="Beginner"
-        />
+      <p id="Running1" style="display: none">
+        Input Experience Level <br />
+        <input type="radio" id="RunExpBeg" name="RunningExp" value="Beginner" />
         <label for="Lifting">Beginner</label><br />
         <input
           type="radio"
@@ -87,14 +82,8 @@
           value="Intermediate"
         />
         <label for="Running">Intermediate</label><br />
-        <input
-          type="radio"
-          id="RunExpExp"
-          name="RunningExp"
-          value="Expert"
-        />
+        <input type="radio" id="RunExpExp" name="RunningExp" value="Expert" />
         <label for="Running">Advanced</label><br />
-      
       </p>
       <p id="RunningDist" style="display: none">
         What distance running do you want to focus on? <br />
@@ -117,58 +106,38 @@
           id="LiftingFocLong"
           name="RunningFocus"
           value="long"
-        /> <label for="Running">10+ Miles</label><br />
-
+        />
+        <label for="Running">10+ Miles</label><br />
+      </p>
 
       <p id="LiftingBeginnerStrength" style="display: none">
         Based on your input, we recommend these programs for you!<br />
-        <a
-          href="ThreeDayFull.html"
-          >3 Day Full Body</a
-        >
+        <a href="ThreeDayFull.html">3 Day Full Body</a>
         <br />
-        <a
-          href="underConstruction.html"
-          > Starting Strength</a
-        >
+        <a href="underConstruction.html"> Starting Strength</a>
       </p>
       <p id="LiftingIntermediateStrength" style="display: none">
         Based on your input, we recommend these programs for you!<br />
-        <a
-          href="Jim5x5.html"
-          >Jim Wendler 5/3/1</a
-        >
+        <a href="Jim5x5.html">Jim Wendler 5/3/1</a>
         <br />
-        <a
-          href="underConstruction.html"
-          > Starting Strength</a
-        >
+        <a href="underConstruction.html"> Starting Strength</a>
       </p>
       <p id="LiftingExpertStrength" style="display: none">
         Based on your input, we recommend these programs for you!<br />
-        <a
-          href="underConstruction.html"
-          >Smolov</a
-        >
+        <a href="underConstruction.html">Smolov</a>
         <br />
-        <a
-          href="underConstruction.html"
-          > Sheiko</a
-        >
-        <a
-          href="underConstruction.html"
-          > Candio 8 or 12 week</a
-        >
+        <a href="underConstruction.html"> Sheiko</a>
+        <a href="underConstruction.html"> Candio 8 or 12 week</a>
       </p>
 
       <br />
       <button onclick="displayText()" id="MainButtonPlanSelector">
         Submit
       </button>
-        <br><br><br>
-      <button id = "resetButton" ; onClick="window.location.reload();">Reset</button>
-
-       
+      <br /><br /><br />
+      <button id="resetButton" ; onClick="window.location.reload();">
+        Reset
+      </button>
 
       <h1 id="display"></h1>
 
@@ -187,8 +156,8 @@
             document
               .getElementById("MainButtonPlanSelector")
               .setAttribute("onclick", "displayTexRunning1()");
-          }else{
-            location.replace("underConstruction.html")
+          } else {
+            location.replace("underConstruction.html");
           }
         }
         function displayTextLifting1() {
@@ -218,34 +187,33 @@
           var exp = document.querySelector(
             'input[name="LiftingFocus"]:checked'
           ).value;
-            if (exp == "Strength") {
-              var exp2= document.querySelector(
+          if (exp == "Strength") {
+            var exp2 = document.querySelector(
               'input[name="LiftingExperience"]:checked'
             ).value;
             if (exp2 == "Beginner") {
               document.getElementById("LiftingBeginnerStrength").style.display =
                 "block";
-            }else if  (exp2 == "Intermediate"){
-              document.getElementById("LiftingIntermediateStrength").style.display =
-                "block";
-            }else {
-              
+            } else if (exp2 == "Intermediate") {
+              document.getElementById(
+                "LiftingIntermediateStrength"
+              ).style.display = "block";
+            } else {
               document.getElementById("LiftingExpertStrength").style.display =
                 "block";
             }
-          }else{
-            location.replace("underConstruction.html")
+          } else {
+            location.replace("underConstruction.html");
           }
         }
-          function displayTexRunning1() {
+        function displayTexRunning1() {
           var exp = document.querySelector(
             'input[name="RunningExp"]:checked'
           ).value;
           document.getElementById("RunningDist").style.display = "block";
-            document
-              .getElementById("MainButtonPlanSelector")
-              .setAttribute("onclick", "displayTextRunning2()");
-         
+          document
+            .getElementById("MainButtonPlanSelector")
+            .setAttribute("onclick", "displayTextRunning2()");
         }
         function displayTextRunning2() {
           var dist = document.querySelector(
@@ -254,24 +222,20 @@
           var exp = document.querySelector(
             'input[name="RunningExp"]:checked'
           ).value;
-            if (dist == "long") {
-              if(exp == "Beginner"){
-              location.replace("runningBegLong.html")
-              }else{
-                location.replace("underConstruction.html")
-              }
-          }else{
-            location.replace("underConstruction.html")
+          if (dist == "long") {
+            if (exp == "Beginner") {
+              location.replace("runningBegLong.html");
+            } else {
+              location.replace("underConstruction.html");
+            }
+          } else {
+            location.replace("underConstruction.html");
           }
-        
         }
       </script>
     </div>
     <div class="navbar">
-      <button
-        class="nav-button dark-blue"
-        onclick="window.location.href='homepage.html'"
-      >
+      <button class="nav-button" onclick="window.location.href='homepage.html'">
         <i
           class="material-icons"
           style="color: #dedede; margin-top: 0; font-size: 20px"
@@ -280,10 +244,7 @@
         <p style="color: #dedede; margin: 0" class="smalltext">Home</p>
       </button>
 
-      <button
-        class="nav-button dark-blue"
-        onclick="window.location.href='graph.html'"
-      >
+      <button class="nav-button" onclick="window.location.href='graph.html'">
         <i
           class="material-icons"
           style="color: #dedede; margin: 0; font-size: 20px"
@@ -293,7 +254,7 @@
       </button>
 
       <button
-        class="nav-button dark-blue"
+        class="nav-button"
         onclick="window.location.href='weightdiary.html'"
       >
         <i
@@ -305,7 +266,7 @@
       </button>
 
       <button
-        class="nav-button dark-blue"
+        class="nav-button"
         onclick="window.location.href='PlanSelector.html'"
       >
         <i
