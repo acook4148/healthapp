@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
+
+* {
+    font-family: 'Roboto Serif', serif;
+}
+
+div.topnavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  background-color:#3269FA;
+  white-space: nowrap;
+  overflow:hidden;
+  height: 3rem;
+  margin-top: -1.75rem;
+  margin-bottom:1rem;
+  width:25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left:-15px;
+  margin-right:-15px;
+  box-shadow: 0 3px 1px -1px #3269FA;
+  position: absolute;
+  top: 3rem;
+}
+
+.top-nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:0;
+  height:3rem;
+  flex:25%;
+  margin-top:.5rem;
+  background-color: #3269FA;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  padding:15px;
+  padding-top:2rem;
+  padding-bottom:0;
+  border-radius: 10px;
+  height:39rem;
+  width:23rem;
+}

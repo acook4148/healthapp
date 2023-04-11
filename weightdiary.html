@@ -1,5 +1,6 @@
 <head>
   <link rel="stylesheet" href="mainstyle.css" />
+  <link rel="stylesheet" href="diarystyle.css" />
   <style>
     .header-container {
       width: 95%;
@@ -35,7 +36,7 @@
       overflow-y: auto;
       justify-content: flex-start;
       align-items: center;
-      height: 16rem;
+      height: 14rem;
       width: 99%;
       border-radius: 5px;
       padding-top: 7px;
@@ -109,6 +110,51 @@
 
 <body>
   <div class="screen">
+    <div class="topnavbar">
+      <button
+        class="top-nav-button"
+        style="margin-top: 0; margin-right: -2rem; margin-left: -1rem"
+      >
+        <i class="material-icons" style="color: #dedede; font-size: 30px"
+          >arrow_forward_ios</i
+        >
+      </button>
+
+      <button
+        class="top-nav-button"
+        onclick="window.location.href='weightdiary.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: white; margin: 0; font-size: 20px"
+          >fitness_center</i
+        >
+        <p style="color: white; margin: 0" class="smalltext">Lifts</p>
+      </button>
+
+      <button
+        class="top-nav-button"
+        onclick="window.location.href='runningTracker.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >directions_run</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">Runs</p>
+      </button>
+      <button
+        class="top-nav-button"
+        onclick="window.location.href='bodyWeightTracker.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >accessibility</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">Body Weight</p>
+      </button>
+    </div>
     <div class="overflow-y">
       <div id="top-banner">
         <div>
