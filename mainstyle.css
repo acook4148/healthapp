@@ -10,7 +10,8 @@ body {
   padding: 1rem;
 }
 
-div#chartDiv {
+canvas {
+  /* display: block; */
   height: 500px;
 }
 
@@ -57,7 +58,7 @@ div.card {
 
 div.card a {
   color: blue;
-  text-decoration: underline;
+  /* text-decorations: underline; */
 }
 
 hr {
@@ -204,10 +205,15 @@ input[type="submit"] {
 p.cals {
   margin-left: 5px;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
+/* p[id="percent"] {
+font-size: 10px;
+} */
+
 #progress {
-  width: 100%;
+  /* width: 100%; */
   width: 19rem;
   border-radius: 5px;
   background-color: none;
