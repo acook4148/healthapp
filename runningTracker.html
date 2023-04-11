@@ -1,0 +1,233 @@
+<head>
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      .header-container {
+        width: 95%;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+      }
+      .subtitle-container {
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .text-inputs {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+      input {
+        background-color: #e7e7e7;
+        border: none;
+        border-radius: 4px;
+        height: 2rem;
+        margin-top: 3px;
+      }
+      .scroll-container {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        justify-content: flex-start;
+        align-items: center;
+        height: 16rem;
+        width: 99%;
+        border-radius: 5px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+      .border {
+        border: solid 1px lightgray;
+      }
+      #top-banner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -1rem;
+        margin-top: 0;
+      }
+      #home-container {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2px;
+        border: 0px;
+      }
+      #add-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+      }
+      #add-button {
+        height: 2rem;
+        line-height: 2rem;
+        width: 4rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      #submit-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      #submit-button {
+        height: 2rem;
+        width: 13rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 0px;
+      }
+      #function-button {
+        height: 2rem;
+        width: 7rem;
+        border-radius: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 0px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="screen">
+      <div class="overflow-y">
+        <div id="top-banner">
+          <div>
+            <p class="heading">Running</p>
+            <p class="heading">Tracker</p>
+          </div>
+        </div>
+        <div class="subtitle-container">
+          <p class="regtext">Record your current run</p>
+        </div>
+        <p class="subheading center" style="margin-top: 2.5rem; margin-bottom: 0">
+          Apr 8, 2023
+        </p>
+
+        <div style="display: flex; flex-direction: column; margin-top: 20%; align-items: center;">
+            <label for="timer">Timer</label>
+            <input type="text" id="timer" name="timer" value="0:00:00" disabled><br><br>
+
+            <label for="timer">Distance</label>
+            <input type="text" id="timer" name="timer" value="0.00 mi" disabled><br><br>
+        </div>
+        
+
+        <div style="display: flex;">
+            <button id="function-button" class="dark-blue">
+              <div style="color: white" class="subheading center">Start</div>
+            </button>
+            <button id="function-button" class="dark-blue">
+                <div style="color: white" class="subheading center">Stop</div>
+              </button>
+          </div>
+        
+        <div id="submit-container">
+          <button id="submit-button" class="dark-blue">
+            <div style="color: white" class="subheading center">Submit Entry</div>
+          </button>
+        </div>
+      </div>
+      <!-- <div class="navbar">
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='homepage.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #dedede; margin-top: 0; font-size: 20px"
+            >home</i
+          >
+          <p style="color: #dedede; margin: 0" class="smalltext">Home</p>
+        </button>
+  
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='graph.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #dedede; margin: 0; font-size: 20px"
+            >show_chart</i
+          >
+          <p style="color: #dedede; margin: 0" class="smalltext">Visualization</p>
+        </button>
+  
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='weightdiary.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: white; margin: 0; font-size: 20px"
+            >book</i
+          >
+          <p style="color: white; margin: 0" class="smalltext">Diary</p>
+        </button>
+  
+        <button
+          class="nav-button dark-blue"
+          onclick="window.location.href='PlanSelector.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #dedede; margin: 0; font-size: 20px"
+            >school</i
+          >
+          <p style="color: #dedede; margin: 0" class="smalltext">Plan Selector</p>
+        </button>
+      </div> -->
+    </div>
+  </body>
+  
+  <script>
+    function addFunction() {
+      var html = document.getElementsByClassName("scroll-container")[0].innerHTML;
+      html += "<div class=text-inputs>";
+      html += "<input style='width:44%;'' type='text' id='exercise'>";
+      html += "<input style='width:21%;'' type='text' id='weight'>";
+      html += "<input style='width:15%;'' type='text' id='sets'>";
+      html += "<input style='width:15%;'' type='text' id='reps'></div>";
+      document.getElementsByClassName("scroll-container")[0].innerHTML = html;
+    }
+  
+    if (document.URL.includes("weightdiary.html")) {
+      document.getElementById(id).style.property = new style();
+    }
+  </script>
+  
