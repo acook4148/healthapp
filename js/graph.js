@@ -18,34 +18,28 @@ const data = {
 
 
 weightVtime = formatPoints(time, weight);
-let chart = null;
-
+// let chart = null;
 // plot(weightVtime)
 
 function plot(pts, x, y) {
-    var ctx = document.getElementById('chart').getContext('2d');
-    chart = new Chart(ctx, {
+    chart = JSC.Chart('chart', {
         type: 'line',
-        data: pts
+        title_label_text: x + " vs " + y, 
+        xAxis_label_text: x,
+        yAxis_label_text: y,
+        series: [
+            {
+                points: pts
+            }
+        ]
         });
-    // chart = new Chart(ctx, {
-    //     type: 'line',
-    //     title_label_text: x + " vs " + y, 
-    //     xAxis_label_text: x,
-    //     yAxis_label_text: y,
-    //     series: [
-    //         {
-    //             points: pts
-    //         }
-    //     ]
-    //     });
 }
 
 function rebuild() {
-    if (chart != null) {
-        chart.destroy(); // to have default chart when screen loads and chart gets deleted when new one is added
+    // if (chart != null) {
+    //     chart.destroy(); // to have default chart when screen loads and chart gets deleted when new one is added
 
-    }
+    // }
     var x = document.getElementById('x').selectedOptions[0].value;
     var y = document.getElementById('y').selectedOptions[0].value;
     plot(formatPoints(data[x], data[y]), x, y);

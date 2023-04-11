@@ -10,8 +10,7 @@ body {
   padding: 1rem;
 }
 
-canvas {
-  /* display: block; */
+div[id="chart"] {
   height: 500px;
 }
 
