@@ -75,6 +75,13 @@
       background-color: #dedede;
       border: 0;
     }
+    .time-input {
+      padding-right: 20px;
+      text-align: left;
+      width: 5rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
   </style>
 </head>
 
@@ -125,13 +132,14 @@
         <p style="color: #dedede; margin: 0" class="smalltext">Body Weight</p>
       </button>
     </div>
-    <div class="overflow-y">
+    <div
+      class="overflow-y"
+      style="display: flex; flex-direction: column; align-items: center"
+    >
       <div style="display: flex; flex-direction: row">
         <button
           class="smalltext center run-button"
           style="
-            background-color: #5680eeff;
-            color: white;
             border-top-left-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
           "
@@ -142,6 +150,8 @@
         <button
           class="smalltext center run-button"
           style="
+            background-color: #5680eeff;
+            color: white;
             border-top-right-radius: 0.5rem;
             border-bottom-right-radius: 0.5rem;
           "
@@ -157,9 +167,12 @@
         </div>
       </div>
       <div class="subtitle-container">
-        <p class="regtext">Begin a new run</p>
+        <p class="regtext">Record a past run</p>
       </div>
-      <p class="subheading center" style="margin-top: 2.5rem; margin-bottom: 0">
+      <p
+        class="subheading center"
+        style="margin-top: 2.5rem; margin-bottom: -1rem"
+      >
         Apr 8, 2023
       </p>
 
@@ -172,40 +185,34 @@
         "
       >
         <label for="timer">Timer</label>
-        <input
-          type="text"
-          id="timer"
-          name="timer"
-          value="0:00:00"
-          disabled
-        /><br /><br />
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 20rem;
+            margin-left: -1rem;
+          "
+        >
+          <input class="time-input" /><span
+            class="smalltext"
+            style="margin-left: -45px; margin-top: 7px"
+            >Hrs</span
+          >
+          <input class="time-input" /><span
+            class="smalltext"
+            style="margin-left: -45px; margin-top: 7px"
+            >Min</span
+          >
+          <input class="time-input" /><span
+            class="smalltext"
+            style="margin-left: -45px; margin-top: 7px"
+            >Sec</span
+          >
+        </div>
 
         <label for="timer">Distance</label>
-        <input
-          type="text"
-          id="timer"
-          name="timer"
-          value="0.00 mi"
-          disabled
-        /><br /><br />
-      </div>
-
-      <div style="display: flex; justify-content: space-around">
-        <button id="function-button" class="dark-blue">
-          <i class="material-icons" style="color: white; font-size: 30px"
-            >play_arrow</i
-          >
-        </button>
-        <button id="function-button" class="dark-blue">
-          <i class="material-icons" style="color: white; font-size: 30px"
-            >pause</i
-          >
-        </button>
-        <button id="function-button" class="dark-blue">
-          <i class="material-icons" style="color: white; font-size: 30px"
-            >stop</i
-          >
-        </button>
+        <input type="text" id="timer" name="timer" /><br /><br />
       </div>
 
       <div id="submit-container">
