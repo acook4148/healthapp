@@ -22,8 +22,16 @@ function addFood() {
     set();
 
     //add to food log
-    let newFood = document.createElement("li");
-    newFood.appendChild(document.createTextNode(name + `: ${calories} Calories`));
     let foodLog = document.getElementById("foodLog");
-    foodLog.appendChild(newFood);
+
+    let tr = foodLog.insertRow(-1);
+
+    // Insert a cell in the row at index 0
+    let td = tr.insertCell(0);
+    let td2 = tr.insertCell(1);
+    
+    // Append a text node to the cell
+    td.appendChild(document.createTextNode(name));
+
+    td2.appendChild(document.createTextNode(calories));
 }
