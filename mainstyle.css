@@ -126,6 +126,11 @@ div.card-header {
   text-align: center;
 }
 
+ div.card a.divHyperLink {
+  text-decoration: none;
+  color: black;
+}
+
 table{
   margin-left: 5%;
   border: 1px solid black;
@@ -150,8 +155,8 @@ th, td {
 input[type="submit"] {
   background-color: #5680eeff;
   color: white;
-  width: 12rem;
-  height: 4rem;
+  width: 10rem;
+  height: 3.5rem;
   font-family: 'Roboto Serif', serif;
   font-size: 20px;
   border-radius: 10px;

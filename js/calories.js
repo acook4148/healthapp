@@ -1,6 +1,6 @@
 window.onload=set;
 
-const dailyCals = 2000;
+let dailyCals = 2000;
 
 const goalCals = 3000
 function set() {
@@ -14,3 +14,16 @@ function set() {
     bar.style.width = percent;
 }
 
+function addFood() {
+    let name = document.getElementById("food").value;
+    let calories = parseInt(document.getElementById("calories").value);
+
+    dailyCals += calories;
+    set();
+
+    //add to food log
+    let newFood = document.createElement("li");
+    newFood.appendChild(document.createTextNode(name + `: ${calories} Calories`));
+    let foodLog = document.getElementById("foodLog");
+    foodLog.appendChild(newFood);
+}

@@ -8,16 +8,74 @@
     <title>Calorie Tracker</title>
   </head>
   <body>
-    <div class="scrollmenu">
-      <a href="homepage.html">Home</a>
-      <a href="graph.html">Visualization</a>
-      <a href="weighdiary.html">Weight Diary</a>
-      <a href="PlanSelector.html">Plan Selector</a>
-    </div>
     <script src="js/calories.js"></script>
+    <h1>Calorie Tracking</h1>
     <p class="cals" id="cals"></p>
     <div id="progress">
       <div id="myBar"></div>
+    </div>
+    <p id="percent"></p>
+
+    <label for="food">Food Name: </label>
+    <input type="text" id="food">
+    <br>
+    <label for="calories">Calories: </label>
+    <input type="number" id="calories" min="1">
+    <input type="submit" value="Add Food" onclick="addFood();" />
+
+    <h2>Today's Food Log</h2>
+    <ul id="foodLog">
+    </ul>
+
+    <div class="navbar">
+      <button
+        class="nav-button"
+        onclick="window.location.href='homepage.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: white; margin-top: 0; font-size: 20px"
+          >home</i
+        >
+        <p style="color: white; margin: 0" class="smalltext">Home</p>
+      </button>
+
+      <button class="nav-button" onclick="window.location.href='graph.html'">
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >show_chart</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">
+          Visualization
+        </p>
+      </button>
+
+      <button
+        class="nav-button"
+        onclick="window.location.href='weightdiary.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >book</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">Diary</p>
+      </button>
+
+      <button
+        class="nav-button"
+        onclick="window.location.href='PlanSelector.html'"
+      >
+        <i
+          class="material-icons"
+          style="color: #dedede; margin: 0; font-size: 20px"
+          >school</i
+        >
+        <p style="color: #dedede; margin: 0" class="smalltext">
+          Plan Selector
+        </p>
+      </button>
     </div>
   </body>
 </html>
