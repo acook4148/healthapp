@@ -241,7 +241,7 @@ p[id="percent"] {
 /* on the Calorie Tracking Screen */
 #progressCalTrack {
   /* width: 100%; */
-  width: 15rem;
+  width: 18rem;
   border-radius: 5px;
   background-color: none;
   border:rgb(203, 203, 203) 1px solid;
@@ -261,7 +261,6 @@ p[id="percent"] {
 
 #myBar {
   height: 25px;
-  /* width: 19rem; */
   border-radius: 5px;
   background-color: #8BA9F4;
 }

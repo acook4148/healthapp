@@ -59,15 +59,19 @@
         </div>
         <div class="card">
           <a class="divHyperLink" href="calorieTracker.html">
-          <div class="card-header">Calorie Progress</div>
-          <div class="card-body">
-            <p class="cals" id="cals"></p>
-            <div id="progress">
-              <div id="myBar"></div>
+            <div class="card-header">Calorie Progress</div>
+            <div class="card-body">
+              <p class="cals" id="cals"></p>
+              <div
+                style="display: flex; flex-direction: row; align-items: start"
+              >
+                <div id="progressCalTrack">
+                  <div id="myBar"></div>
+                </div>
+                <p id="percent"></p>
+              </div>
             </div>
-            <p id="percent"></p>
-          </div>
-        </a>
+          </a>
         </div>
         <div class="card">
           <div class="card-header">Yesterday's Recap</div>
@@ -81,10 +85,7 @@
         </div>
       </div>
       <div class="navbar">
-        <button
-          class="nav-button"
-          onclick="window.location.href='index.html'"
-        >
+        <button class="nav-button" onclick="window.location.href='index.html'">
           <i
             class="material-icons"
             style="color: white; margin-top: 0; font-size: 20px"
