@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Serif'); */
+@font-face {
+  font-family: "Roboto Serif";
+  src: url("Roboto_Serif/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf");
+}
+
+
 
 * {
     font-family: 'Roboto Serif', serif;
