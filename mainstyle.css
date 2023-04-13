@@ -137,6 +137,13 @@ div.card-header {
   color: black;
 }
 
+p#plus {
+  color: blue;
+  font-size: 11px;
+  margin: 4px 10px 0 0;
+  float:right; 
+}
+
 table#foodLog {
   /* width: 300px; */
   background-color: white;
