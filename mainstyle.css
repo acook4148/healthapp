@@ -231,6 +231,8 @@ p.cals {
 div.bar {
   display: flex;
   flex-direction: row;
+  height:1.6rem;
+  margin-bottom: 1rem;
 }
 
 p[id="percent"] { 
