@@ -228,15 +228,20 @@ p.cals {
   margin-bottom: 5px;
 }
 
-p[id="percent"] {
-margin-top: 5px;
-margin-left: 10px;
+div.bar {
+  display: flex;
+  flex-direction: row;
+}
+
+p[id="percent"] { 
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 /* on the Calorie Tracking Screen */
 #progressCalTrack {
   /* width: 100%; */
-  width: 19rem;
+  width: 15rem;
   border-radius: 5px;
   background-color: none;
   border:rgb(203, 203, 203) 1px solid;
@@ -246,7 +251,7 @@ margin-left: 10px;
 
 #progress {
   /* width: 100%; */
-  width: 19rem;
+  width: 15rem;
   border-radius: 5px;
   background-color: none;
   border:rgb(203, 203, 203) 1px solid;
