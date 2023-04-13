@@ -215,15 +215,36 @@
       <div id="add-container">
         <button
           onclick="addFunction()"
-          style="color: white; border: 0"
+          style="
+            color: white;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            width: 6rem;
+            height: 2.5rem;
+          "
           class="light-blue"
           id="add-button"
         >
-          <i class="material-icons" style="color: white">add</i>
+          <i
+            class="material-icons"
+            style="color: white; margin-bottom: -5px; font-size: 15"
+            >add</i
+          >
+          <p
+            class="smalltext"
+            style="color: white; margin-top: 0; margin-bottom: 0"
+          >
+            Add Lift
+          </p>
         </button>
       </div>
       <div id="submit-container">
-        <button id="submit-button" class="dark-blue">
+        <button
+          onclick="window.location.href='weightdiary.html'"
+          id="submit-button"
+          class="dark-blue"
+        >
           <div style="color: white" class="subheading center">Submit Entry</div>
         </button>
       </div>
