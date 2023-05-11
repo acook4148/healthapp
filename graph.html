@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mainstyle.css" />
-    <title>Visualization</title>
+    <title>Progress Data</title>
   </head>
   <body>
     <div class="screen">
@@ -16,28 +16,39 @@
         <div id="chart"></div>
         <script src="js/graph.js"></script>
 
-        <label for="x">x-axis:</label>
+        <input type="button" value="Body Weight" onclick="return rebuild('Time', 'Body Weight');" />
+        <input type="button" value="Calories" onclick="return rebuild('Time', 'Average Calorie Intake');" />
+        <input type="button" value="Bench Press" onclick="return rebuild('Time', 'Bench Press');" />
+        <input type="button" value="Custom" onclick="return custom();" />
 
-        <select name="x" id="x">
-          <option value="Time" selected>Time</option>
-          <option value="Body Weight">Body Weight</option>
-          <option value="Average Calorie Intake">Average Calorie Intake</option>
-          <option value="Bench Press">Bench Press</option>
-        </select>
+        <br>
+        <br>
+        <div id="custom" style="display: none;"><label for="x">x-axis:</label>
 
-        <br />
+          <select name="x" id="x">
+            <option value="Time" selected>Time</option>
+            <option value="Body Weight">Body Weight</option>
+            <option value="Average Calorie Intake">Average Calorie Intake</option>
+            <option value="Body Fat">Body Fat</option>
+            <option value="Bench Press">Bench Press</option>
+          </select>
+  
+          <br>
+  
+          <label for="y">y-axis:</label>
+  
+          <select name="y" id="y">
+            <option value="Body Weight" selected>Body Weight</option>
+            <option value="Average Calorie Intake">Average Calorie Intake</option>
+            <option value="Body Fat">Body Fat</option>
+            <option value="Bench Press">Bench Press</option>
+          </select>
+  
+          <p id="errorMessage" style='color: red; display: none;'>x-axis and y-axis must be different</p>
 
-        <label for="y">y-axis:</label>
-
-        <select name="y" id="y">
-          <option value="Body Weight" selected>Body Weight</option>
-          <option value="Average Calorie Intake">Average Calorie Intake</option>
-          <option value="Body Fat">Body Fat</option>
-          <option value="Bench Press">Bench Press</option>
-        </select>
-
-        <input type="submit" value="Graph" onclick="return rebuild();" />
-      </div>
+          <input type="button" value="Display" onclick="return rebuild('custom', 'custom');" style="margin-bottom: 10px;"/>
+        </div>
+      
       <div class="navbar">
         <button
           class="nav-button"
@@ -57,7 +68,7 @@
             style="color: white; margin: 0; font-size: 20px"
             >show_chart</i
           >
-          <p style="color: white; margin: 0" class="smalltext">Visualization</p>
+          <p style="color: white; margin: 0" class="smalltext">Progress Data</p>
         </button>
 
         <button

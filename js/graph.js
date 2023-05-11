@@ -27,6 +27,7 @@ function plot(pts, x, y) {
         title_label_text: x + " vs " + y, 
         xAxis_label_text: x,
         yAxis_label_text: y,
+        // defaultPoint_legendEntry_checkbox_enabled: false,
         series: [
             {
                 points: pts
@@ -35,14 +36,36 @@ function plot(pts, x, y) {
         });
 }
 
-function rebuild() {
+function custom() {
+    let customGraph = document.getElementById("custom");
+    customGraph.style.display = "block";
+}
+
+function rebuild(xaxis, yaxis) {
     // if (chart != null) {
     //     chart.destroy(); // to have default chart when screen loads and chart gets deleted when new one is added
 
     // }
-    var x = document.getElementById('x').selectedOptions[0].value;
-    var y = document.getElementById('y').selectedOptions[0].value;
-    plot(formatPoints(data[x], data[y]), x, y);
+    
+
+    if (xaxis === "custom") {
+        xaxis = document.getElementById('x').selectedOptions[0].value;
+        yaxis = document.getElementById('y').selectedOptions[0].value;
+    }
+
+    let error = document.getElementById("errorMessage");
+
+    if (xaxis === yaxis) { 
+        error.style.display = "block";
+        return;
+    }
+    error.style.display = "none";
+
+    let customGraph = document.getElementById("custom");
+    customGraph.style.display = "none";
+    
+    
+    plot(formatPoints(data[xaxis], data[yaxis]), xaxis, yaxis);
 }
 
 
