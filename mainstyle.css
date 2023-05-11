@@ -132,9 +132,13 @@ div.card-header {
   text-align: center;
 }
 
- div.card a.divHyperLink {
+div.card a.divHyperLink {
   text-decoration: none;
   color: black;
+}
+
+div#link:hover {
+  background-color: rgb(212, 212, 212);
 }
 
 p#plus {
