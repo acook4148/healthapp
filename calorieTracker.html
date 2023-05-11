@@ -5,12 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mainstyle.css" />
+    <link rel="stylesheet" href="diarystyle.css" />
     <title>Calorie Tracker</title>
+    <style>
+      #submit-button {
+      height: 2rem;
+      width: 13rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 0px;
+    }
+    </style>
   </head>
   <body>
     <script src="js/calories.js"></script>
     <div class="screen">
-      <h1>Calorie Tracking</h1>
+      <div class="topnavbar">
+        <button
+          class="top-nav-button"
+          onclick="window.location.href='weightdiary.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #aeaeae; margin: 0; font-size: 20px"
+            >fitness_center</i
+          >
+          <p style="color: #aeaeae; margin: 0" class="smalltext">Lifts</p>
+        </button>
+  
+        <button
+          class="top-nav-button"
+          onclick="window.location.href='runningTracker.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #aeaeae; margin: 0; font-size: 20px"
+            >directions_run</i
+          >
+          <p style="color: #aeaeae; margin: 0" class="smalltext">Runs</p>
+        </button>
+        <button
+          class="top-nav-button"
+          onclick="window.location.href='bodyWeightTracker.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: #aeaeae; margin: 0; font-size: 20px"
+            >accessibility</i
+          >
+          <p style="color: #aeaeae; margin: 0" class="smalltext">Body Weight</p>
+        </button>
+        <button
+          class="top-nav-button"
+          onclick="window.location.href='calorieTracker.html'"
+        >
+          <i
+            class="material-icons"
+            style="color: white; margin: 0; font-size: 20px"
+            >restaurant</i
+          >
+          <p style="color: white; margin: 0" class="smalltext">Food</p>
+        </button>
+      </div>
+      <h1 style="margin-top: -2rem;">Calorie Tracking</h1>
       <p class="cals" id="cals"></p>
       <div class="bar">
         <div id="progressCalTrack">
@@ -30,13 +92,23 @@
       <!-- <ul id="foodLog">
       </ul> -->
 
-      <div style="height: 150px; overflow: auto">
+      <div style="height: 150px">
         <table id="foodLog">
           <tr>
             <th id="foodLog"><strong>Food</strong></th>
             <th id="foodLog">Calories</th>
           </tr>
         </table>
+      </div>
+
+      <div id="submit-container">
+        <button
+          onclick="window.location.href='calorieTracker.html'"
+          id="submit-button"
+          class="dark-blue"
+        >
+          <div style="color: white;" class="subheading center">Save Entry</div>
+        </button>
       </div>
 
       <div class="navbar">
@@ -52,10 +124,10 @@
         <button class="nav-button" onclick="window.location.href='graph.html'">
           <i
             class="material-icons"
-            style="color: #dedede; margin: 0; font-size: 20px"
+            style="color: #aeaeae; margin: 0; font-size: 20px"
             >show_chart</i
           >
-          <p style="color: #dedede; margin: 0" class="smalltext">
+          <p style="color: #aeaeae; margin: 0" class="smalltext">
             Progress Data
           </p>
         </button>
@@ -66,10 +138,10 @@
         >
           <i
             class="material-icons"
-            style="color: #dedede; margin: 0; font-size: 20px"
+            style="color: #aeaeae; margin: 0; font-size: 20px"
             >book</i
           >
-          <p style="color: #dedede; margin: 0" class="smalltext">Diary</p>
+          <p style="color: #aeaeae; margin: 0" class="smalltext">Diary</p>
         </button>
 
         <button
@@ -78,10 +150,10 @@
         >
           <i
             class="material-icons"
-            style="color: #dedede; margin: 0; font-size: 20px"
+            style="color: #aeaeae; margin: 0; font-size: 20px"
             >school</i
           >
-          <p style="color: #dedede; margin: 0" class="smalltext">
+          <p style="color: #aeaeae; margin: 0" class="smalltext">
             Plan Selector
           </p>
         </button>
