@@ -186,6 +186,15 @@ input[type="submit"] {
   margin-top: 5px;
 }
 
+label.exerciseText { 
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+}
+
 #MainButtonPlanSelector {
   background-color: #5680eeff;
   color: white;
