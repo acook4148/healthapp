@@ -137,9 +137,9 @@ div.card a.divHyperLink {
   color: black;
 }
 
-div#link:hover {
+/* div#link:hover {
   background-color: rgb(212, 212, 212);
-}
+} */
 
 p#plus {
   color: blue;
@@ -149,7 +149,7 @@ p#plus {
 }
 
 table#foodLog {
-  /* width: 300px; */
+  width: 300px;
   background-color: white;
   margin-left: 0;
 }

@@ -72,7 +72,7 @@
           <p style="color: white; margin: 0" class="smalltext">Food</p>
         </button>
       </div>
-      <h1 style="margin-top: -2rem;">Calorie Tracking</h1>
+      <h1 style="margin-top: 0rem;">Calorie Tracking</h1>
       <p class="cals" id="cals"></p>
       <div class="bar">
         <div id="progressCalTrack">
@@ -87,12 +87,13 @@
       <label for="calories"><b>Calories:</b></label>
       <input type="number" id="calories" min="1" />
       <input type="submit" value="Add Food" onclick="addFood();" />
+      <p id="errorMessage" style='color: red; display: none;'>Please enter the food name and calorie amount</p>
 
       <h2>Today's Food Log</h2>
       <!-- <ul id="foodLog">
       </ul> -->
 
-      <div style="height: 150px">
+      <div style="height: 175px; overflow-y: auto; overflow-x:hidden;">
         <table id="foodLog">
           <tr>
             <th id="foodLog"><strong>Food</strong></th>

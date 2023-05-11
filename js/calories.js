@@ -18,6 +18,13 @@ function addFood() {
     let name = document.getElementById("food").value;
     let calories = parseInt(document.getElementById("calories").value);
 
+    let error = document.getElementById("errorMessage");
+    if (name === "" || isNaN(calories)) { 
+        error.style.display = "block";
+        return;
+    }
+
+    error.style.display = "none";
     dailyCals += calories;
     set();
 
